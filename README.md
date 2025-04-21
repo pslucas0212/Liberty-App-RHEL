@@ -20,3 +20,9 @@ Successfully connected to Red Hat!
 Manage your connected systems: https://red.ht/connector
 ```
 
+- Update RHEL
+```
+# dnf -y update
+...
+
+```
