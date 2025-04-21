@@ -76,3 +76,12 @@ Complete!
 git version 2.43.5
 
 ```
+
+## Getting Started
+
+- Change back to your user and clone the git repository
+```
+# exit
+$ git clone https://github.com/openliberty/guide-getting-started.git
+$ cd guide-getting-started
+```
