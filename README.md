@@ -29,3 +29,11 @@ Last metadata expiration check: 0:11:49 ago on Mon 21 Apr 2025 10:08:21 AM CDT.
 Complete!
 # reboot now
 ```
+
+- Install conatiner tools
+```
+# dnf install -y container-tools
+Updating Subscription Management repositories.
+Last metadata expiration check: 0:03:14 ago on Mon 21 Apr 2025 10:22:52 AM CDT.
+```
+
