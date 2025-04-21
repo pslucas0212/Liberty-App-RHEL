@@ -1,7 +1,7 @@
 # Jakarta EE app on Liberty running in Podman on RHEL 9
 
 - Install RHEL
-- Seet hostname
+- Switch to root and Seet hostname
 ```
 $ sudo -i
 [sudo] password for pslucas:
@@ -20,12 +20,12 @@ Successfully connected to Red Hat!
 Manage your connected systems: https://red.ht/connector
 ```
 
-- Update RHEL
+- Update RHEL and reboot the server
 ```
 # dnf -y update
 Updating Subscription Management repositories.
 Last metadata expiration check: 0:11:49 ago on Mon 21 Apr 2025 10:08:21 AM CDT.
-
 ...
-
+Complete!
+# reboot now
 ```
