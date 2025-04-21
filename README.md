@@ -42,3 +42,25 @@ Updating Subscription Management repositories.
 Last metadata expiration check: 0:03:14 ago on Mon 21 Apr 2025 10:22:52 AM CDT.
 ```
 
+- Check the Java Installation
+```
+# java -version
+openjdk version "21.0.7" 2025-04-15 LTS
+OpenJDK Runtime Environment (Red_Hat-21.0.7.0.6-1) (build 21.0.7+6-LTS)
+OpenJDK 64-Bit Server VM (Red_Hat-21.0.7.0.6-1) (build 21.0.7+6-LTS, mixed mode, sharing)
+```
+
+- Install Maven and chekc Maven version
+```
+dnf install -y maven
+Updating Subscription Management repositories.
+Last metadata expiration check: 0:17:36 ago on Mon 21 Apr 2025 10:22:52 AM CDT.
+...
+Complete!
+# mvn --version
+Apache Maven 3.6.3 (Red Hat 3.6.3-19)
+Maven home: /usr/share/maven
+Java version: 17.0.15, vendor: Red Hat, Inc., runtime: /usr/lib/jvm/java-17-openjdk-17.0.15.0.6-2.el9.aarch64
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.14.0-503.38.1.el9_5.aarch64", arch: "aarch64", family: "unix"
+```
