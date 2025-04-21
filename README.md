@@ -23,6 +23,9 @@ Manage your connected systems: https://red.ht/connector
 - Update RHEL
 ```
 # dnf -y update
+Updating Subscription Management repositories.
+Last metadata expiration check: 0:11:49 ago on Mon 21 Apr 2025 10:08:21 AM CDT.
+
 ...
 
 ```
