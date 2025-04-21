@@ -98,7 +98,16 @@ git version 2.43.5
 $ git clone https://github.com/openliberty/guide-getting-started.git
 $ cd guide-getting-started
 ```
+- Let's run the microservice to see what it does.  First we will use maven to donwload, configure and launch Open Liberty with the microservice
+```
+$ cd ~/guide-getting-started/start/
+$ mvn liberty:start
+[INFO] Scanning for projects...
+...
+[INFO] Starting server defaultServer.
+```
 
+- Let's test the microservice.  Go to a browser window and type in the following URL [http://localhost:9080/system/properties](http://localhost:9080/system/properties)  You should a list java system properties in your browser.
 
 
 
