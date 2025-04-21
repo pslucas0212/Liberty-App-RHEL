@@ -98,3 +98,11 @@ git version 2.43.5
 $ git clone https://github.com/openliberty/guide-getting-started.git
 $ cd guide-getting-started
 ```
+
+
+
+
+### Apendix
+- [Getting started with Open Liberty](https://openliberty.io/guides/getting-started.html)
+- [How to customize Linux user environments](https://www.redhat.com/en/blog/customize-user-environments)
+- [Linux environment variable tips and tricks](https://www.redhat.com/en/blog/linux-environment-variables)
