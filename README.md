@@ -1,8 +1,8 @@
 # Jakarta EE app on Liberty running in Podman on RHEL 9
 
-### Pre-reqs
+## Pre-reqs  
 - Install RHEL
-- Switch to root and Seet hostname
+- Switch to root and Set hostname
 ```
 $ sudo -i
 [sudo] password for pslucas:
