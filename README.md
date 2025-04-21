@@ -58,10 +58,8 @@ OpenJDK 64-Bit Server VM (Red_Hat-21.0.7.0.6-1) (build 21.0.7+6-LTS, mixed mode,
 # tar -xzf apache-maven-3.9.9-bin.tar.gz 
 
 ```
-- check Maven version
-etadata expiration check: 0:17:36 ago on Mon 21 Apr 2025 10:22:52 AM CDT.
-...
-Complete!
+- check Maven version  
+```
 # mvn --version
 Apache Maven 3.6.3 (Red Hat 3.6.3-19)
 Maven home: /usr/share/maven
