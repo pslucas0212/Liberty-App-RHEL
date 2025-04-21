@@ -51,32 +51,15 @@ OpenJDK Runtime Environment (Red_Hat-21.0.7.0.6-1) (build 21.0.7+6-LTS)
 OpenJDK 64-Bit Server VM (Red_Hat-21.0.7.0.6-1) (build 21.0.7+6-LTS, mixed mode, sharing)
 ```
 
-- For this tutorial we need Maven 3.8.6.  Let's check what version of Mave is available for installation.
+- For this tutorial we need Maven 3.8.6 or a later release.  For this tutorial I donwloaded the binary tar.gz archive 3.9.9 from the [Maven Apache Project](https://maven.apache.org/download.cgi).  After you download the Maven, you can move the file from your Downloads directory to the directory of your choice.  I placed the file in the /usr/local file.  Unzip the file there.
 ```
-# dnf list maven
-Updating Subscription Management repositories.
-Last metadata expiration check: 0:39:37 ago on Mon 21 Apr 2025 10:22:52 AM CDT.
-Available Packages
-maven.noarch                                  1:3.6.3-19.el9_5                                   rhel-9-for-aarch64-appstream-rpms
-```
-- Mavenb 3,8.x is not listed as an available package. Let's enable Maven 3.8
-```
-# dnf -y module enable maven:3.8
-...
-Complete!
-# dnf list maven
-Updating Subscription Management repositories.
-Last metadata expiration check: 0:47:08 ago on Mon 21 Apr 2025 10:22:52 AM CDT.
-Available Packages
-maven.noarch                       1:3.8.5-6.module+el9.4.0+21292+f76c4bf2                       rhel-9-for-aarch64-appstream-rpms
+# mv apache-maven-3.9.9-bin.tar.gz /usr/local/
+# cd /usr/local
+# tar -xzf apache-maven-3.9.9-bin.tar.gz 
 
 ```
-
-- Install Maven and check Maven version
-```
-# dnf -y install maven
-Updating Subscription Management repositories.
-Last metadata expiration check: 0:17:36 ago on Mon 21 Apr 2025 10:22:52 AM CDT.
+- check Maven version
+etadata expiration check: 0:17:36 ago on Mon 21 Apr 2025 10:22:52 AM CDT.
 ...
 Complete!
 # mvn --version
