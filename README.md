@@ -56,17 +56,28 @@ OpenJDK 64-Bit Server VM (Red_Hat-21.0.7.0.6-1) (build 21.0.7+6-LTS, mixed mode,
 # mv apache-maven-3.9.9-bin.tar.gz /usr/local/
 # cd /usr/local
 # tar -xzf apache-maven-3.9.9-bin.tar.gz 
+```
+
+- In this tutorial I'm the only user on this Linux system, but I'll set up the enviroment so any user of this server will have access to Maven if they need it.  I chose to place the updated path information to our Maven install in the /etc/profile.d/sh.local file which automatically add it to any user's path when they login into the machine.
 
 ```
+# vi /etc/profile.d/sh.local
+# Add Maven to all users path
+export M2_HOME=/usr/local/apache-maven-3.9.9
+export PATH=$M2_HOME/bin:$PATH
+```
+
 - check Maven version  
 ```
 # mvn --version
-Apache Maven 3.6.3 (Red Hat 3.6.3-19)
-Maven home: /usr/share/maven
-Java version: 17.0.15, vendor: Red Hat, Inc., runtime: /usr/lib/jvm/java-17-openjdk-17.0.15.0.6-2.el9.aarch64
+# mvn --version
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: /usr/local/apache-maven-3.9.9
+Java version: 21.0.7, vendor: Red Hat, Inc., runtime: /usr/lib/jvm/java-21-openjdk-21.0.7.0.6-1.el9.aarch64
 Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "5.14.0-503.38.1.el9_5.aarch64", arch: "aarch64", family: "unix"
 ```
+
 - Install git and check git version
 ```
 # dnf install -y git
