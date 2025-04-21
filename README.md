@@ -30,6 +30,11 @@ Complete!
 # reboot now
 ```
 
+- Intall OpenJDK 21 which is the latest Long Term Support (LTS) version of the OpenJDK
+```
+# dnf install -y java-21-openjdk-devel
+```
+
 - Install conatiner tools
 ```
 # dnf install -y container-tools
