@@ -1,8 +1,22 @@
 # Jakarta EE app on Liberty running in Podman on RHEL 9
 
-1. Install RHEL
-2. Register RHEL
-3. ```
-4. $ sudo -i
-5. [sudo] password for pslucas: 
-6. ```
+- Install RHEL
+- Seet hostname
+```
+$ sudo -i
+[sudo] password for pslucas:
+# hostnamectl set-hostname AppSrv01.example.com
+# hostname**
+AppSrv01.example.com
+ ```  
+- Register RHEL
+```
+rhc connect --activation-key ak-rhel-server-liberty --organization ########
+Connecting AppSrv01.example.com to Red Hat.
+This might take a few seconds.
+...
+Successfully connected to Red Hat!
+
+Manage your connected systems: https://red.ht/connector
+```
+
