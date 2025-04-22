@@ -109,6 +109,11 @@ $ mvn liberty:start
 
 - Let's test the microservice.  Go to a browser window and type in the following URL [http://localhost:9080/system/properties](http://localhost:9080/system/properties)  You should a list java system properties in your browser.
 
+- Do some developer stuff - TBD
+
+## Creating a container
+
+- We will use the Podman Build command to build our container with the supplied Dockerfile
 
 
 ### Apendix
